@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR DataWeb Solution</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Syne:wght@400;700&family=Yantramanav:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- =========================
+         Navbar (Fixed Top)
+    ========================= -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+      <div class="container" id="navbar">
+        <div class="logo-brand">
+          <a class="navbar-brand img-fluid" href="#">
+            <img src="./assets/images/logo.jpeg" class="img-fluid" alt="AR DataWeb Solution Logo">
+          </a>
+        </div>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedback">Feedback</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="https://forms.office.com/r/btcutPmFtz?origin=lprLink" class="btn custom-btn">
+                Get in Touch
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================
+         Header Section
+    ========================= -->
+    <div id="header">
+      <div id="left-header" class="section-title-texts">
+        <p>What We Do</p>
+        <h1>IT Consulting and Software Engineering</h1>
+        <p>FiftyFive covers the entire software development process, from product vision discussion to application
+          design and software enhancement.</p>
+        <ul>
+          <li><span><i class="ri-checkbox-circle-fill"></i></span>Remote Team Extension</li>
+          <li><span><i class="ri-checkbox-circle-fill"></i></span>Custom Software Development</li>
+          <li><span><i class="ri-checkbox-circle-fill"></i></span>Office - Ajmer , Rajasthan</li>
+        </ul>
+      </div>
+
+      <div id="right-header">
+        <div class="right-header-img-box">
+          <h1>AI & ML Data Engineering</h1>
+          <img src="./assets/images/person-data.webp" alt="AI & ML Data">
+        </div>
+        <div class="right-header-img-box">
+          <h1>Web & Mobile Development</h1>
+          <img src="./assets/images/person witn lap.webp" alt="Web & Mobile">
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         Services Section
+    ========================= -->
+    <div id="services">
+      <div id="upper-service">
+        <div id="left-service" class="section-title-texts service-title-text">
+          <p>OUR SERVICES</p>
+          <h1>Build Better, Scale Smarter</h1>
+          <p>IT consulting and software engineering services — from rapid MVPs to full-scale platforms, we power your
+            growth at every stage.</p>
+        </div>
+        <div id="right-service">
+          <div id="btn" class="right-service-btn">
+            <button class="service-btn"><a class="text-decoration-none"
+                href="https://forms.office.com/r/btcutPmFtz?origin=lprLink">Learn More</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom-service">
+        <!-- First Row (4 Boxes) -->
+        <div class="service-row row-1">
+          <div class="service-card">
+            <img src="./assets/images/service images/Remote-team.jpeg" alt="Remote Team">
+            <h5>Remote Team Extension</h5>
+            <p>Scale your engineering capacity fast with vetted offshore teams that integrate into your workflow from
+              day
+              one.</p>
+            <button><a href="https://distantjob.com/blog/team-extension/"><i
+                  class="ri-arrow-right-up-line"></i></a></button>
+          </div>
+
+          <div class="service-card">
+            <img src="./assets/images/service images/business-data-analysis.jpg" alt="AI Data">
+            <h5>AI & ML Engineering</h5>
+            <p>Custom AI/ML models for analytics, automation, and intelligent solutions.</p>
+            <button><a href="https://www.coursera.org/in/articles/what-is-machine-learning-engineer"><i
+                  class="ri-arrow-right-up-line"></i></a></button>
+          </div>
+
+          <div class="service-card">
+            <img src="./assets/images/service images/WEB-iOT-1.jpeg" alt="Web & IoT">
+            <h5>Web & Mobile Development</h5>
+            <p>Design and build cross-platform applications with smooth UX and scalability.</p>
+            <button><a href="https://en.wikipedia.org/wiki/Web_development"><i
+                  class="ri-arrow-right-up-line"></i></a></button>
+          </div>
+
+          <div class="service-card">
+            <img src="./assets/images/service images/cloud.jpg" alt="Cloud">
+            <h5>Cloud Infrastructure</h5>
+            <p>Build and deploy scalable cloud systems on AWS, Azure, and GCP.</p>
+            <button><a href="https://www.cloudflare.com/learning/security/api/what-is-a-cloud-api/"><i
+                  class="ri-arrow-right-up-line"></i></a></button>
+          </div>
+        </div>
+
+        <!-- Second Row (2 Boxes) -->
+        <div class="service-row row-2">
+          <div class="service-card wide">
+            <img src="./assets/images/service images/excel.jpg" alt="Excel Automation">
+            <h5>Excel Automation</h5>
+            <p>Automate your repetitive Excel tasks, create smart dashboards, and save hours with custom VBA and script
+              solutions</p>
+            <button><a href="https://numerous.ai/blog/excel-automation"><i
+                  class="ri-arrow-right-up-line"></i></a></button>
+          </div>
+
+          <div class="service-card wide">
+            <img class="img-fluid" src="./assets/images/service images/react.jpg" alt="React">
+            <h5>React Development</h5>
+            <p>Build fast, dynamic and modern front-end interfaces using React.js for scalable web applications</p>
+            <button><a href="https://fullscale.io/blog/what-is-a-react-developer/"><i
+                  class="ri-arrow-right-up-line"></i></a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         Clients / Tech Section
+    ========================= -->
+    <div id="tech">
+      <div id="upper-tech">
+        <div id="left-tech" class="section-title-texts service-title-text">
+          <p>How We Work</p>
+          <h1>Technology We Offer</h1>
+        </div>
+      </div>
+
+      <div class="bottom-tech ">
+        <div id="tech-row">
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/react.png" alt="react logo">
+            <p>React.js</p>
+            <p>Redux, React - Native, ThreeJS, NextJS</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/python.png" alt="pyhton logo">
+            <p>Python Development
+
+            </p>
+            <p>Django, Flask, Pandas</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/coding.png" alt="webd logo">
+            <p>Web Development</p>
+            <p>HTML, CSS, JS, React full-stack web services</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/backend-coding.png" alt="backend logo">
+            <p>Backend (Node/SQL)</p>
+            <p>REST APIs, database integration</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/excel.png" alt="excel logo">
+            <p>Excel Automation</p>
+            <p>VBA, Macros, Google Sheets API</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/settings.png" alt="">
+            <p>PHP & Java</p>
+            <p>Custom client systems</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/cloud-api.png" alt="cloud-api
+            ">
+            <p>API Integration</p>
+            <p>Mail, SMS, payment gateway</p>
+          </div>
+          <div class="tech-card">
+            <img class="tech-card-img" src="./assets/images/our tech pngs/cloud-coding.png" alt="">
+            <p>Cloud & Deployment</p>
+            <p>RAWS / Firebase / Netlify hosting, CI/CD deployment, server setup & scaling</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- =========================
+         Feedback Section
+    ========================= -->
+    <div id="feedback">
+      <div id="feedback-title">
+        <div id="feedback-title-section" class="section-title-texts service-title-text">
+          <p>Project Success</p>
+          <h1>Our Clients Speak for Us</h1>
+        </div>
+      </div>
+
+      <div id="feedback-slider-continer">
+        <!-- Repeated feedback sliders (optimized for clarity, keep original design) -->
+        <div class="feedback-slider">
+          <p class="feedback-slider-title-p">Customer-focused, results-driven.</p>
+          <p class="feedback-slider-title-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            facere asperiores minus quibusdam vel minima ullam in officiis totam magnam tempore ipsa assumenda quod quae
+            voluptates officia, debitis nobis reprehenderit!
+            Dolorum quos laudantium aut ut animi similique nobis at nemo, velit voluptatem fugiat quae, voluptatum
+            tenetur sed! Quaerat, quos. Vel, qui doloribus rem quas tempore laborum? Minima sapiente possimus facilis.
+          </p>
+          <div class="feedback-slider-contact">
+            <img src="./assets/images/clients images/dummy-man.png" alt="Client">
+            <div class="feedback-slider-contact-details">
+              <p>Yasmin Baba</p>
+              <p>Qopla, Founder & CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider">
+          <p class="feedback-slider-title-p">Customer-focused, results-driven.</p>
+          <p class="feedback-slider-title-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            facere asperiores minus quibusdam vel minima ullam in officiis totam magnam tempore ipsa assumenda quod quae
+            voluptates officia, debitis nobis reprehenderit!
+            Dolorum quos laudantium aut ut animi similique nobis at nemo, velit voluptatem fugiat quae, voluptatum
+            tenetur sed! Quaerat, quos. Vel, qui doloribus rem quas tempore laborum? Minima sapiente possimus facilis.
+          </p>
+          <div class="feedback-slider-contact">
+            <img src="./assets/images/clients images/dummy-man.png" alt="Client">
+            <div class="feedback-slider-contact-details">
+              <p>Yasmin Baba</p>
+              <p>Qopla, Founder & CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider">
+          <p class="feedback-slider-title-p">Customer-focused, results-driven.</p>
+          <p class="feedback-slider-title-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            facere asperiores minus quibusdam vel minima ullam in officiis totam magnam tempore ipsa assumenda quod quae
+            voluptates officia, debitis nobis reprehenderit!
+            Dolorum quos laudantium aut ut animi similique nobis at nemo, velit voluptatem fugiat quae, voluptatum
+            tenetur sed! Quaerat, quos. Vel, qui doloribus rem quas tempore laborum? Minima sapiente possimus facilis.
+          </p>
+          <div class="feedback-slider-contact">
+            <img src="./assets/images/clients images/dummy-man.png" alt="Client">
+            <div class="feedback-slider-contact-details">
+              <p>Yasmin Baba</p>
+              <p>Qopla, Founder & CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider">
+          <p class="feedback-slider-title-p">Customer-focused, results-driven.</p>
+          <p class="feedback-slider-title-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            facere asperiores minus quibusdam vel minima ullam in officiis totam magnam tempore ipsa assumenda quod quae
+            voluptates officia, debitis nobis reprehenderit!
+            Dolorum quos laudantium aut ut animi similique nobis at nemo, velit voluptatem fugiat quae, voluptatum
+            tenetur sed! Quaerat, quos. Vel, qui doloribus rem quas tempore laborum? Minima sapiente possimus facilis.
+          </p>
+          <div class="feedback-slider-contact">
+            <img src="./assets/images/clients images/dummy-man.png" alt="Client">
+            <div class="feedback-slider-contact-details">
+              <p>Yasmin Baba</p>
+              <p>Qopla, Founder & CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider">
+          <p class="feedback-slider-title-p">Customer-focused, results-driven.</p>
+          <p class="feedback-slider-title-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            facere asperiores minus quibusdam vel minima ullam in officiis totam magnam tempore ipsa assumenda quod quae
+            voluptates officia, debitis nobis reprehenderit!
+            Dolorum quos laudantium aut ut animi similique nobis at nemo, velit voluptatem fugiat quae, voluptatum
+            tenetur sed! Quaerat, quos. Vel, qui doloribus rem quas tempore laborum? Minima sapiente possimus facilis.
+          </p>
+          <div class="feedback-slider-contact">
+            <img src="./assets/images/clients images/dummy-man.png" alt="Client">
+            <div class="feedback-slider-contact-details">
+              <p>Yasmin Baba</p>
+              <p>Qopla, Founder & CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider">
+          <p class="feedback-slider-title-p">Customer-focused, results-driven.</p>
+          <p class="feedback-slider-title-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            facere asperiores minus quibusdam vel minima ullam in officiis totam magnam tempore ipsa assumenda quod quae
+            voluptates officia, debitis nobis reprehenderit!
+            Dolorum quos laudantium aut ut animi similique nobis at nemo, velit voluptatem fugiat quae, voluptatum
+            tenetur sed! Quaerat, quos. Vel, qui doloribus rem quas tempore laborum? Minima sapiente possimus facilis.
+          </p>
+          <div class="feedback-slider-contact">
+            <img src="./assets/images/clients images/dummy-man.png" alt="Client">
+            <div class="feedback-slider-contact-details">
+              <p>Yasmin Baba</p>
+              <p>Qopla, Founder & CTO</p>
+            </div>
+          </div>
+        </div>
+        <!-- Additional sliders can be repeated as needed -->
+      </div>
+    </div>
+
+    <!-- =========================
+         Contact Section
+    ========================= -->
+    <div id="contact">
+      <div id="left-contact">
+        <div class="left-contact-title">
+          <form class="clients-left-box" action="https://formspree.io/f/xqaydylv" method="POST" target="_blank">
+            <p class="form-title">CONTACT US</p>
+            <p class="form-subtitle">Submit Your Details</p>
+            <hr>
+
+            <div class="form-group">
+              <label for="name">Full Name</label><br>
+              <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label><br>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone No</label><br>
+              <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="other">Describe Your Project</label><br>
+              <textarea id="other" name="other" style="width:100%; overflow:hidden;"
+                placeholder="Tell us about your project"></textarea>
+            </div>
+
+            <button class="btn btn-primary" style="width:100%;" type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="right-contact">
+        <div class="right-contact-box">
+          <div class="right-box-total-professional right-contact-text">
+            <p>0</p>
+            <p>IT Professionals</p>
+          </div>
+          <hr>
+          <div class="right-box-total-domains right-contact-text">
+            <p>0</p>
+            <p>Total Domains</p>
+          </div>
+          <hr>
+          <div class="client-right-box-total-projects right-contact-text">
+            <p>1</p>
+            <p>Projects Delivered</p>
+          </div>
+          <hr>
+          <div class="client-right-box-total-retention right-contact-text">
+            <p>0</p>
+            <p>Client Retention</p>
+          </div>
+          <hr>
+          <div class="client-right-box-total-response right-contact-text">
+            <p>5 Hours</p>
+            <p>Response Time</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         Footer
+    ========================= -->
+    <footer>
+      <div class="left-footer">
+        <p>&copy; 2025 AR DataWeb Solution</p>
+      </div>
+      <div class="right-footer">
+        <a href="https://www.linkedin.com/company/109007153/admin/dashboard/"><i class="ri-linkedin-box-line"></i></a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,810 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: var(--light_white);
+}
+
+/* Colors and fonts */
+:root {
+  --dark1: #1c1c1c;
+  --dark2: #454545;
+  --light_white: #f9f9f9;
+  --primary_color: #1351d8;
+  --primary_color2: #4f8dff;
+  --primary_light: #f3f6fd;
+  --primary_light2: rgb(19 81 216 / 10%);
+  --gray: #d9d9d9;
+  --font_syne: "Syne", sans-serif;
+  --font_yantramanv: "Yantramanav", sans-serif;
+  --font_dm: "DM Sans", sans-serif;
+  --yellow_color: #ffd600;
+}
+
+/* =========================
+   Global / Wrapper
+========================= */
+#main {
+  width: 100%;
+  height: auto;
+  background-color: var(--light_white);
+}
+
+/* =========================
+   Navbar (Fixed Top)
+========================= */
+.navbar {
+  position: fixed;
+  height: 13vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff !important;
+  border-bottom: 1px solid #eee;
+  z-index: 10000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar Inner Container (Centered Layout 90%) */
+#navbar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo-brand {
+  width: auto;
+  height: 45px; /* Fixed height */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 100%;
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* No cropping */
+  display: block;
+}
+
+/* Navbar Links */
+.nav-link {
+  font-weight: 500;
+  color: var(--dark2);
+  transition: color 0.3s ease;
+  font-family: var(--font_dm);
+}
+
+.nav-link:hover {
+  color: var(--primary_color);
+}
+
+/* =========================
+   Custom Button (Get in Touch)
+========================= */
+.custom-btn {
+  background-color: var(--primary_color);
+  color: white !important;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: var(--font_dm);
+  border: none;
+  display: inline-block;
+}
+
+.custom-btn:hover {
+  background-color: black;
+  color: white !important;
+}
+
+/* =========================
+   Responsive Navbar (Mobile)
+========================= */
+
+#btn button {
+  background-color: var(--primary_color);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font_dm);
+  padding: 10px 22px;
+  background-color: none;
+  border: none;
+  border-radius: 30px;
+}
+#btn > button:hover {
+  background-color: var(--dark1);
+}
+#btn > button a:hover {
+  color: white;
+}
+
+#btn > button a {
+  text-align: none;
+  color: white;
+}
+#logo {
+  height: 45%;
+}
+
+.navbar-brand {
+  width: 90px;
+}
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Fake navbar (creates space below fixed navbar) */
+#fakeNavbar {
+  width: 100%;
+  height: 13vh;
+}
+
+/* Header section */
+#header {
+  width: 100%;
+  height: auto;
+  padding-top: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#left-header {
+  width: 40%;
+  height: 90%;
+  line-height: 14px;
+  margin: auto;
+}
+
+.section-title-texts p:nth-child(1) {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font_dm);
+  letter-spacing: 2px;
+  color: var(--primary_color);
+  margin-bottom: 22px;
+
+  text-transform: uppercase;
+}
+
+.section-title-texts p:nth-child(3) {
+  font-size: 15px;
+  line-height: 21px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  color: #1c1c1ccc;
+  margin-bottom: 35px;
+}
+.section-title-texts h1 {
+  font-size: 45px;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+
+  width: 100%;
+  color: #212529;
+  font-weight: 600;
+  font-family: var(--font_yantramanv);
+}
+
+.section-title-texts ul {
+  text-decoration: none;
+  padding-left: 0;
+}
+.section-title-texts ul li {
+  list-style: none;
+}
+.section-title-texts ul li {
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  color: rgb(28 28 28 / 80%);
+  font-weight: 400;
+  line-height: 3.6;
+}
+#right-header {
+  width: 52%;
+  height: 90%;
+  display: flex;
+  padding-bottom: 54px;
+  justify-content: space-around;
+}
+
+.right-header-img-box {
+  height: 98%;
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.right-header-img-box h1 {
+  color: white;
+  position: absolute;
+  font-size: 32px;
+  line-height: 1;
+  font-family: "Yantramanav", "sans-serif";
+  font-weight: 500;
+  letter-spacing: -2px;
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+
+.right-header-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.7s;
+}
+
+.right-header-img-box:hover img {
+  transform: scale(1.3);
+  transform-origin: 50% 50%;
+}
+
+#services {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--dark1);
+}
+
+#upper-service {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 45px;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+#left-service {
+  width: 40%;
+}
+#right-service {
+  width: 40%;
+}
+
+.right-service-btn {
+  float: right;
+}
+.right-service-btn .service-btn:hover {
+  background-color: white !important;
+}
+
+.service-btn a:hover {
+  color: black !important;
+}
+.service-title-text h1 {
+  color: white;
+}
+.service-title-text p:nth-child(3) {
+  color: white;
+}
+
+#bottom-service {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Common row layout */
+.service-row {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+/* Card Style */
+.service-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 267px;
+  height: 297px;
+  flex: 1 1 267px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.service-card h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--dark1);
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Arrow button (bottom right corner) */
+.service-card button {
+  background-color: var(--primary_color);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.service-card a {
+  text-decoration: none;
+  color: white;
+}
+
+.service-card button:hover {
+  background-color: var(--dark1);
+}
+
+/* Second row boxes (double width) */
+.service-card.wide {
+  width: calc(50% - 10px);
+  height: 297px;
+}
+
+#tech {
+  width: 100%;
+  height: auto;
+}
+#upper-tech {
+  display: flex;
+
+  padding-top: 20px;
+
+  height: 50%;
+  align-items: start;
+
+  margin-bottom: 45px;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+#bottom-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+  width: 85%;
+
+  align-items: start;
+
+  margin-bottom: 45px;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+#left-tech {
+  margin: auto;
+  width: 90%;
+}
+
+#left-tech h1 {
+  color: black;
+}
+#tech-row {
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.tech-card {
+  width: 210px;
+  height: 250px;
+  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  padding: 58px 24px 50px 26px;
+}
+
+.tech-card p:nth-child(1) {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "DM Sans", sans-serif;
+}
+.tech-card p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 14px;
+  font-family: "Yantramanav";
+}
+.tech-card-img {
+  height: 36px;
+  margin-bottom: 25px;
+  width: 37px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  max-width: 100%;
+}
+#feedback {
+  width: 100%;
+  overflow: hidden; /* side ke blank spaces hide karne ke liye */
+  padding: 60px 0;
+  height: auto;
+}
+#feedback-title {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+
+  height: 20%;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 45px;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+#feedback-title {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#feedback-title h1 {
+  color: black;
+}
+
+#feedback-slider-continer {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: slide-left-right 4s ease-in-out infinite alternate;
+  animation-play-state: running;
+}
+@keyframes slide-left-right {
+  0% {
+    transform: translateX(20);
+  }
+  100% {
+    transform: translateX(
+      -20%
+    ); /* Ye value adjust karni hoti hai kitna slide ho */
+  }
+}
+
+#feedback-slider-continer:hover {
+  animation-play-state: paused;
+}
+.feedback-slider {
+  flex: 0 0 690px; /* Fixed width per card */
+  height: 411px;
+  background: var(--dark1);
+  border-radius: 10px;
+  padding: 60px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.feedback-slider-title-p {
+  color: #fff;
+
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 28.5px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.feedback-slider-title-pera {
+  color: #ffffffbf;
+  line-height: 27px;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+.feedback-slider-contact img {
+  width: 50px;
+  height: 50px;
+}
+.feedback-slider-contact {
+  display: flex;
+  gap: 15px;
+}
+.feedback-slider-contact-details {
+  text-align: left;
+}
+.feedback-slider-contact-details p:nth-child(1) {
+  font-weight: 500;
+  color: #fff;
+  line-height: 1;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+}
+.feedback-slider-contact-details p:nth-child(2) {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #ffffffbf;
+}
+#contact {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-bottom: 20px;
+  margin: auto;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+#left-contact {
+  width: 70%;
+  height: 730px;
+  margin: auto;
+  padding: 78px 62px 69px 62px;
+  background: var(--primary_light);
+  border-radius: 10px;
+}
+
+.left-contact-title form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-contact-title {
+  width: 100%;
+}
+.left-service-btn button {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  padding: 10px 22px;
+
+  background: var(--primary_color);
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none !important;
+  gap: 10px;
+}
+.left-service-btn button:hover {
+  background-color: var(--dark1);
+}
+.left-service-btn button a:hover {
+  color: white;
+}
+.left-service-btn button a {
+  text-align: none;
+  color: white;
+}
+.form-title {
+  margin-bottom: 17px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--primary_color);
+
+  text-transform: uppercase;
+  font-family: "DM Sans", sans-serif;
+}
+.form-subtitle {
+  margin-bottom: 16px;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #212529;
+  font-family: "Yantramanav", "sans-serif";
+  font-weight: 600;
+}
+
+.form-group label {
+  color: var(--dark1);
+  opacity: 0.9;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+  width: 100%;
+}
+.form-group input {
+  height: 36px;
+  font-size: 13px;
+
+  width: 100%;
+  border: 1px solid rgb(16 24 40 / 20%);
+
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+.right-contact {
+  width: 30%;
+  height: 730px;
+  padding: 78px 62px 62px 62px;
+  background: var(--primary_light);
+  border-radius: 10px;
+}
+
+.right-contact-text p:nth-child(1) {
+  color: #212529;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.right-contact-text p:nth-child(2) {
+  font-weight: 300;
+  line-height: 1;
+  color: var(--primary_color);
+}
+
+footer {
+  display: flex;
+  align-items: center !important;
+  margin: auto;
+  height: 50px;
+  background-color: var(--dark1);
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+footer .left-footer {
+  width: 45%;
+  padding-left: 20px;
+  align-self: center;
+}
+
+footer .left-footer p {
+  color: white;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  margin: auto;
+}
+footer .right-footer {
+  width: 45%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+footer .right-footer a {
+  text-decoration: none;
+}
+footer .right-footer i {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+/* Responsive design */
+/* @media only screen and (max-width: 1024px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left-contact,
+  .right-contact {
+    width: 100%;
+    height: auto;
+  }
+} */
+/* ✅ Fix Contact Overlap on Mobile */
+@media only screen and (max-width: 992px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left-contact,
+  .right-contact {
+    width: 100%;
+    height: auto; /* Auto adjust height */
+    padding: 40px 25px; /* Slightly reduce padding */
+  }
+
+  .form-subtitle {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .navbar-collapse {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .custom-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .service-row {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #header {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #services {
+    padding: 20px 0;
+    gap: 30px;
+  }
+
+  #left-header,
+  #right-header {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #upper-service {
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    gap: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #left-service {
+    width: 100%;
+  }
+  #right-service {
+    float: left;
+  }
+
+  .tech-card {
+    width: 257px;
+  }
+
+  .right-contact-box {
+    text-align: center;
+  }
+}
